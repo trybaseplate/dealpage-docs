@@ -1,0 +1,61 @@
+---
+title: "Templates"
+description: "Reusable documents that can be personalized"
+icon: "image"
+---
+
+<img src="/images/template.png" alt="Template" />
+
+Templates are reusable versions of pitch decks, proposals, etc. that can be personalized for each client.
+To make part of the template personalizable, replace it with a variable and provide a default value.
+The default value will be used as a guide for the personalization. If no default value is provided, then the model will generate
+with more creative decisioning. You can also provide custom instructions that guide the tone or what to search for with each variable.
+
+## Variables
+
+There are 5 types of variables, each with different syntax.
+
+### Text
+
+These will be replaced with plain text. Useful for titles, address lines, or smaller phrases.
+
+```
+{customer_name}
+```
+
+### Images
+
+These start with a `%` and will be replaced with an image. Images from your content library will be searched, as well as the images from the deal such as contact pictures and client logos.
+
+```
+{%customer_logo}
+```
+
+### Loops
+
+Loop variables have the below syntax will be replaced with a dynamic number of items. Useful for order forms, dyanmic tables, and lists.
+
+```
+{#items}{item_name}{/items}
+```
+
+### Objects
+
+Object variables have the `.` delimiter and are group related variables together, and are processed at the same time. Use this when you want related variables to be grouped and have related logic.
+
+```
+{customer.name}
+{customer.address}
+```
+
+### HTML
+
+HTML variables start with a `~~` are replaced with rich text from the model. Useful for longer sections of a proposal where you need rich text formatting.
+
+```
+{~~content}
+```
+
+## Example
+
+Below is an example page with all variable types and how they look when run through a workflow.
