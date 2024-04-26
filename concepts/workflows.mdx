@@ -1,66 +1,33 @@
 ---
 title: "Workflows (RFPs, SQs, emails)"
-description: "The navigation field in mint.json defines the pages that go in the navigation menu"
+description: "Save time by automating manual workflows"
 icon: "map"
 ---
 
-The navigation menu is the list of links on every website.
+## Email Drafting
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+Have AI generate follow up emails to any thread, and share content through links inside the email.
+To do this inside the DealPage app, you can either click the `Draft an email` button in the deal home page or go to the deal Inbox and click `Draft Response`:
 
-## Navigation syntax
+<img src="/images/email.png" alt="Emails" />
+<img src="/images/emaildraft.png" alt="Emails Draft" />
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+## Security Questionnaire Responses
 
-<CodeGroup>
+To start a questionnaire response, click the `SQ Response` action in the deal home page.
+After uploading the questionnaire as an xlsx document, you can configure which columns should be filled by the model and which column contains the question.
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
+<img src="/images/sq.png" alt="SQ" />
 
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
+## RFP Responses
 
-</CodeGroup>
+To start an RFP response, click the `RFP Response` action in the deal home page. After uploading the RFP,
+an outline will be extracted. Edit the sections and questions in the outline. Each question will be individually searched
+and answered from your knowledge base.
 
-## Folders
+<img src="/images/rfp.png" alt="RFP" />
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+## Templates
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
-
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+To customize a template for a customer, click the `Customize a template` action. Information from the deal, including contacts, line items, and documents will be used as source
+material to customize the template variables. See [templates](/concepts/templates) for more information on how to set up templates.
