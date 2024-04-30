@@ -56,8 +56,8 @@
         "workflows/content-sharing",
         "workflows/follow-up-emails",
         "workflows/email-responses",
-        "workflows/RFP-responses",
-        "workflows/SQ-responses",
+        "workflows/rfp-responses",
+        "workflows/sq-responses",
         "workflows/template-customization"
       ]
     }
