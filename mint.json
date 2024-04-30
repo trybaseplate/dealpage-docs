@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "DealPage AI Docs",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/dealpage_full.svg"
@@ -36,18 +36,32 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["quickstart"]
+      "pages": ["introduction", "quickstart"]
     },
     {
       "group": "Concepts",
       "pages": [
         "concepts/deals",
         "concepts/knowledge-base",
+        "concepts/chat",
+        "concepts/workflows",
         "concepts/templates",
-        "concepts/integrations",
-        "concepts/workflows"
+        "concepts/integrations"
+      ]
+    },
+    {
+      "group": "Workflows",
+      "pages": [
+        "workflows/handoffs",
+        "workflows/content-sharing",
+        "workflows/follow-up-emails",
+        "workflows/email-responses",
+        "workflows/RFP-responses",
+        "workflows/SQ-responses",
+        "workflows/template-customization"
       ]
     }
+
   ],
   "footerSocials": {
     "twitter": "https://x.com/DealPageHQ",
