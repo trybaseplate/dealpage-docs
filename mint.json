@@ -53,9 +53,9 @@
       "group": "Workflows",
       "pages": [
         "workflows/handoffs",
-        "workflows/content-sharing",
         "workflows/follow-up-emails",
         "workflows/email-responses",
+        "workflows/content-sharing",
         "workflows/rfp-responses",
         "workflows/sq-responses",
         "workflows/template-customization"
