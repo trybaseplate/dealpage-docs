@@ -1,0 +1,65 @@
+---
+title: "Completing Workflows"
+description: "How Paige Completes Multi-Step Workflows"
+icon: "comments"
+---
+
+## Overview
+Paige is an AI Agent. [Agents](https://aws.amazon.com/what-is/ai-agents/) are able to reason, plan, and execute tasks via a set of Tools that we make available. 
+
+This allows you to interact with Paige via natural language prompts (e.g. via chat), or via explicit instructions (e.g. via buttons in the DealPage App). 
+
+<img src="/images/web-app-chat.png" alt="Web Chat" />
+
+## Tools
+
+Paige is an advanced AI Agent with the ability to understand your intent and take guided actions on your behalf. Here's a breakdown of a few of the Tools she can use and how you can tailor your questions to guide her.
+
+<img src="/images/web-app-deal-search.png" alt="Deal Search" />
+
+### Knowledge Base Question Answering
+You can ask Paige questions about your products, playbooks, and more. She will respond with the most relevant information from your [Knowledge Base](../usage/knowledge-base).
+E.g. What data centers do we use to serve European customers?
+
+### Document Retrieval
+You can ask Paige to find links to documents, like a case study, pitch deck, or contract. She will respond with links to the most relevant documents from your Knowledge Base.
+E.g. Can you **find the document** detailing use cases of our Slack bot?
+
+### Deal Question Answering
+You can ask Paige questions about specific [Deals](../usage/deals). She will respond with the most relevant information from your CRM, email, meeting transcripts, and other connected tools.
+E.g. What did we demo to close our **deal with Acme Corp**?
+
+### Deal Retrieval
+You can ask Paige to find links to a specific Deal. She will automatically use this function as an intermediate step before a Deal Question Answering function call.
+E.g. Find our deal with **Acme Corp**.
+
+### Workflows
+You can ask Paige to kick off any DealPage workflow, like responding to an email, filling out a security questionnaire, or personalizing a ptich deck.
+E.g. Can you **personalize our intro pitch deck** for my meeting with Acme corp?
+
+<img src="/images/Slack-workflow-kickoff.png" alt="Workflows in Slack" />
+
+## Workflows
+For common workflows, we've give Paige Tools that work in an optimized, reproducible way.
+
+### Planning
+For complex tasks (like [writing a proposal](../workflows/content-generation)]) Paige will plan a set of intermediate steps before executing anything. 
+
+### Chain of Thought
+Paige will often answer a set of questions for herself before starting on a complex task. For example, when asked to write a proposal, she will usually refresh herself on your value proposition, the customer's pain points, any pricing that you've discussed, etc.
+
+### Search
+Paige's favorite tool is search. It helps her answer questions for herself, find examples, and more. She executes various types of search at every step in DealPage Workflows.
+
+
+## FAQ
+
+### Do documents created by Paige match our brand's style?
+* Paige fetches examples of similar content from your Knowledge Base when writing documents. She won't always match your style if you don't have good examples, so we recommend using her outputs as first drafts.
+
+### What types of workflows can I complete with Paige?
+* Explicit workflows are [Emails](../workflows/emails) (respond or compose), [Documents](../workflows/content-generation) (generate or customize), and Respond ([spreadsheet](../workflows/sq-responses) or [RFP](../workflows/rfp-responses)).
+* You can ask Paige to complete a variety of other tasks via chat, much like ChatGPT. These will not have the same guarantees as explicit workflows.
+
+### Can I edit or customize the intermediate steps of a workflow?
+* Usually! We want to make these intermediate steps more visible to users and configurable. When possible, we show these steps and allow users to change them, giving much more control over outputs.

@@ -25,46 +25,45 @@
     "name": "Get a demo",
     "url": "https://www.dealpage.ai/contact"
   },
-
-  "anchors": [
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://dealpage.ai/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": ["introduction", "quickstart"]
     },
     {
-      "group": "Concepts",
+      "group": "How the AI Works",
       "pages": [
-        "concepts/deals",
-        "concepts/knowledge-base",
-        "concepts/chat",
-        "concepts/workflows",
-        "concepts/templates",
-        "concepts/integrations"
+        "how-it-works/learning", 
+        "how-it-works/completing-workflows"
+      ]
+    },
+    {
+      "group": "User Guides",
+      "pages": [
+        "usage/knowledge-base",
+        "usage/deals",
+        "usage/chat",
+        "usage/documents",
+        "usage/integrations"
       ]
     },
     {
       "group": "Workflows",
       "pages": [
-        "workflows/handoffs",
-        "workflows/follow-up-emails",
-        "workflows/email-responses",
-        "workflows/content-sharing",
+        "workflows/emails",
+        "workflows/content-generation",
         "workflows/rfp-responses",
-        "workflows/sq-responses",
-        "workflows/template-customization"
+        "workflows/sq-responses"
       ]
     }
-
   ],
   "footerSocials": {
     "twitter": "https://x.com/DealPageHQ",
     "linkedin": "https://www.linkedin.com/company/dealpageai"
+  },
+  "analytics": {
+    "posthog": {
+      "apiKey": "phc_oPxpvgqdQ2YXM3Qua1kIkCmPmevLT9XWWf6kVD2r6Mj"
+    }
   }
 }
