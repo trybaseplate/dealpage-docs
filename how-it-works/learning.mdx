@@ -7,41 +7,43 @@ icon: "comments"
 ## Overview
 Paige is a hard working, capable virtual teammate. She uses resources in your DealPage [Knowledge Base](../usage/knowledge-base) and your DealPage [Deals](../usage/deals) to provide instant, accurate, and definitive answers to questions and complete workflows.
 
+<img src="/images/slack-deal-search.png" alt="Slack Chat" />
+
 Like any new teammate, Paige is as good as the information you give her. Teams typically [integrate](../usage/integrations) their Knowledge Base and Deals with their documentation sites, CRM, email, and meeting transcripts to provide Paige with accurate information to complete her work.
 
 Paige is not actually trained on any of your data. Rather, she is enabled by powerful search (RAG) and agentic techniques.
 
+<img src="/images/search-decision-tree.png" alt="Decision Tree Chat" />
+
 She can instantly answer questions ranging from:
 "What data center would we use for a customer in the UK?" to
 "What is our uptime commitment and SLA with Acme Corp.?"
-<img src="/images/web-app-chat.png" alt="Web Chat" />
 
 ## Knowledge Base Sources
 The Knowledge Base helps teams maintain a single, organized, up-to-date, and accurate source of truth about their products, security, and services. 
 We offer a ton of integrations and tools to make this as easy as possible. 
 
-<img src="/images/web-app-deal-search.png" alt="Deal Search" />
+<img src="/images/web-app-kb-search.png" alt="Web Chat" />
 
 ### Documents
-You can upload any document to DealPage. We use OCR to extract content from documents, break the content into digestible chunks, and generate 'embeddings'. For a detailed explainer on embeddings and the use cases for RAG, see here.
+You can upload any document or presentation to DealPage. We use OCR to extract content from documents, break the content into digestible chunks, and generate 'embeddings'. For a detailed explainer on embeddings and the use cases for RAG, see here.
 
-#### Web Pages
+### Web Pages
 You can also connect specific documentation sites and landing pages to your Knowledge Base. Content is similarly extracted and embedded for retrieval. 
 
-#### Spreadsheets / Tables
+### Spreadsheets / Tables
 Our method for efficient retrieval over spreadsheets and tables allows Paige to find answers in complex .xlsx files and even tables in the middle of .pdfs.
 
-#### Images
+### Images
 Much like with tables, Paige is able to extract information from, and answer questions using content from images like diagrams or screenshots.
 
 ### Verified Answers
 Verified Answers are specific Question-Answer pairs maintained by teams to answer common questions. Verified Answers are prioritized over answers from Documents when there is a high-confidence match. Verified Answers are an important way to improve Paige's performance over time.
 
-<img src="/images/Slack-workflow-kickoff.png" alt="Workflows in Slack" />
-
-
 ## Deal Sources
 Deals are individual Knowledge Bases dedicated to specific accounts your team is selling or supporting. Because Deals are always changing, we highly recommend using integrations to ensure your Deals are up-to-date and comprehensive.
+
+<img src="/images/web-app-deal-search.png" alt="Deal Search" />
 
 ### CRM
 Each Deal syncs automatically with a variety of objects from Opportunities in your CRM. This includes files, notes, tickets, contacts, and more. Syncs run automatically - ensuring Paige is using the most up-to-date information.
@@ -55,7 +57,6 @@ Emails sent through a CRM or via Gmail can be synced to the appropriate Deal aut
 ### Documents
 You can upload deal-specific documents like contracts, security agreements, and sales collateral to a deal.
 
-<img src="/images/slackchannelresponse.png" alt="Deal info" />
 
 ## Improve the Responses
 Click the thumbs up or thumbs down button on the response to provide feedback. This feedback is used periodically to improve the model's responses. You can also edit the responses and add to your Verified Answers library to instantly improve outputs.
