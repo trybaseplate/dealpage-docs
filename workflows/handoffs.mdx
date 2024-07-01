@@ -1,35 +1,39 @@
 ---
-title: "Account Handoffs and Reporting"
+title: "Account Handoffs"
 description: "Streamline information sharing about your accounts."
 ---
 ## Overview
-The average sales team spends tons of time syncing up on accounts, Slack messaging teammates and digging through emails to find the latest information. Paige helps streamline information sharing when passing leads from SDRs to AEs, and from AEs to AMs.
+The average sales team spends tons of time syncing up on accounts, Slack messaging teammates and digging through emails to find the latest information. Paige helps streamline information sharing when passing leads from sales to presales to postsales.
 
 This protects against information loss, ensures a smooth handoff, and helps reps close deals faster.
 
-With Paige, you can skip the meetings and messages, and just ask your assistant to catch you up on deals and answer your specific questions. For example:
-1. Summarize the deal with Acme Corp
-2. Who is the decision maker in our deal with Acme Corp?
-3. What product lines are Acme Corp considering?
+Handoffs can be conducted via Chat - by asking Paige to summarize the deal, answer specific questions, or even by asking her to catch up a new team member.
+Handoffs can also be conducted using a handoff Template - the template contains a pre-defined set of questions and answers that can be used to ensure a consistent handoff process.
 
-<img src="/images/web-app-deal-search.png" alt="Web Chat" />
+<img src="/images/chat-handoffs.png" alt="conduct handoffs asynchronously via AI Chat" />
 
-## Benefits
-1. **Save time:** No more meetings or long message threads to catch up on deals
-2. **Close deals faster:** Get the information you need to close deals faster
-3. **Protect against information loss:** Ensure a smooth handoff between reps
-
-## How it works
-1. **Connect your Data:** Paige indexes the "Deal Context" from each Deal to answer your questions
+## Examples
+1. Summarize the deal with Acme Corp. Did we discuss budget?
+2. Search our deal with Yodo with opportunities for upsell and account growth, then search for potential churn risks we identified. Then generate a handoff report for account managers 
 
 
-2. **Add to a Slack Channel:** Add Paige to your Deal room in Slack to get real-time answers and updates about your deals
+## Pre-requisites
+1. To conduct handoffs via Chat, you just need to make sure Paige has access to the right data (e.g. CRM and meeting transcripts).
+2. To conduct handoffs via a Template, you need to create a handoff template in the DealPage web app.
 
-<img src="/images/dealinfo.png" alt="Web Chat" />
-3. **Ask your assistant:** When looping in a Sales Engineer or Account Manager as deals progress, we recommend asking Paige to catch them up on important aspects of the deal proactively. They can ask their own questions as well.
+## How it works via Chat
+1. Create a chat session or open the chat modal using "cmd + k". 
+2. Enter your query. Use one of the examples above or create your own! Ensure that you are mentioning the Deal in your query to help Paige look in the right place.
+3. Feel free to ask follow-up questions.
 
-<img src="/images/slack-prep-se.png" alt="Web Chat" />
+<img src="/images/handoffs-template.png" alt="template for document-based account handoffs" />
 
+## How it works via Template
+1. Create a handoff template in the DealPage web app. Add a variable for each topic you want the handoff document to cover. E.g. `{pain_points}`
+2. Add instructions for each variable. E.g. "Summarize the pain points for this account in 3 bullet points"
+3. When you want to generate a handoff document, select the "Document" workflow inside of your Deal. Choose the handoff Template and click "Customize." Paige will generate a handoff document based on the template and the data in the Deal.
+
+<img src="/images/handoffs-filled.png" alt="a Template filled out with Deal Info for a handoff" />
 
 ## Tips
 1. Connect your CRM to have Deals/Opportunities automatically sync with DealPage. We'll index all of the standard CRM objects and properties. If we miss a field that you need, just let us know at support@dealpage.ai

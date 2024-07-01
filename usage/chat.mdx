@@ -6,15 +6,15 @@ description: "AI Assistant with knowledge of your deals and products"
 ## Overview
 Paige uses resources in your DealPage [Knowledge Base](../usage/knowledge-base) and your [Deals](../usage/deals) to provide instant, accurate, and definitive answers to your questions.
 
-Leveraging our embedding and multi-step retrieval architecture, your team can build an AI search engine in a few clicks. Rather than clicking through multiple apps, files, or messages to find what you need, just ask Paige through Slack, Chrome, or the DealPage web app.
+She’ll respond instantly with relevant sources and an answer. She can format her answer in any way you need, regardless of if you need an email, set of bullet points, or a markdown table - saving you tons of valuable time.
 
-She’ll respond instantly with relevant links and an answer. She can format her answer in any way you need, regardless of if you need an email, set of bullet points, or a markdown table.
+Paige can even chain together multiple steps to find answers to complex queries. 
 
 <img src="/images/slack-deal-search.png" alt="Slack search" />
 
 ## Functions
 
-Paige is an advanced AI Agent with the ability to understand your intent and take guided actions on your behalf. Here's a breakdown of the functions she can perform and how you can tailor your questions to get the most out of her.
+Paige is an advanced AI Agent with the ability to understand your intent and take guided actions on your behalf. Paige is able to recursively chain the functions below to complete complex workflows like pipeline reviews, product gap analysis, meeting prep, and more.
 
 <img src="/images/web-app-deal-search.png" alt="Deal Search" />
 
@@ -26,19 +26,47 @@ E.g. What data centers do we use to serve European customers?
 You can ask Paige questions about the deal, like who the decision maker is, what the timeline is, and more. She will respond with the most relevant information from your CRM, email, meeting transcripts, and other connected tools.
 E.g. What did we demo to close our **deal with Acme Corp**?
 
-### Document Retrieval
+### Document Selection
 You can ask Paige to find links to documents, like a case study, pitch deck, or contract. She will respond with links to the most relevant documents from your knowledge base.
 E.g. Can you **find the document** detailing use cases of our Slack bot?
 
-### Workflows
-You can ask Paige to perform actions, like responding to an email, filling out a security questionnaire, or personalizing a ptich deck.
-E.g. Can you **personalize our intro pitch deck** for my meeting with Acme corp?
+### Deal Selection
+Find deals based on a flexible set of criteria like recency, deal size, customer description, revenue, number of employees, etc.
+E.g. What are the top 10 biggest deals we've worked on with healthcare customers?
 
-<img src="/images/Slack-workflow-kickoff.png" alt="Workflows in Slack" />
+## Use Cases
+Use cases are flexible and can be tailored to your specific needs. Paige can do whatever you ask as long as your Knowledge Base and Deals include the information she needs. Here are some common use cases:
+
+### Pipeline Reviews
+Ask Paige to help you understand your current deals, risks, and opportunities. She can help you identify gaps in your pipeline, prioritize deals, and more.
+
+E.g. "Take our top 10 in-progress deals by revenue and summarize the deals, with specific mentions of their use cases and pain points, along with any potential blockers"
+
+### Product Gap Analysis
+Ask Paige to help you understand where your product is falling short. She can help you identify gaps in your product, prioritize features, and more.
+
+E.g. "Search the last 5 deals we lost and identify product gaps in the meeting transcripts. Then categorize them and output them in a table along with the amount of revenue affected. After identifying gaps, look in our product roadmap to see if we have an estimated delivery date for those features."
+
+### Meeting Prep
+Ask Paige to help prep for meetings and calls. She can help you efficiently learn from previous opportunities (or the current one).
+
+E.g. "Find deals with healthcare companies that we won, and summarize the products and features that were the most important. also search for the questions they asked and categorize them in a table"
+
+E.g. "Prep me for a demo with Wordtune by finding the key points from our last meeting relating to use cases, pain points, and potential blockers. Give me some conversation starters"
+
+### Handoffs
+Prepare for handoffs between team members. Paige can help you quickly get up to speed on a deal or account.
+
+E.g. "Search our deal with Yodo with opportunities for upsell and account growth, then search for potential churn risks we identified. Then generate a handoff report for the account managers."
 
 
 ## Channels
 You can interact with Paige through Slack, Chrome, or the DealPage web app.
+
+### DealPage Web App
+You can chat with Paige at any time in the DealPage Web App by pressing cmd/ctrl + k or clicking the chat bar in the sidebar. Paige will save your chat sessions for later use.
+
+Paige Chat in the web app is faster, has a better UI, and has advanced handling of workflows. You can also see a history of your past questions and answers.
 
 ### Slack
 You can ask Paige questions in any channel or direct message. She will respond with the most relevant information from your knowledge base or deals, based on your question.
@@ -53,13 +81,9 @@ There are 3 primary ways teams use Paige in Slack:
 
 <img src="/images/slack-document-search.png" alt="Slack document retrieval" />
 
-### DealPage Web App
-You can chat with Paige at any time in the DealPage Web App by pressing cmd/ctrl + k or clicking the chat bar in the sidebar. She will respond with the most relevant information from your knowledge base or deals, based on your question.
-
-Paige Chat in the web app is faster, has a better UI, and has advanced handling of workflows. You can also see a history of your past questions and answers.
 
 ### Chrome Extension
-If you install the DealPage chrome extension, you can chat with Paige at any time by clicking the DealPage icon in the top right corner of your browser. She will respond with the most relevant information from your knowledge base or deals, based on your question.
+If you install the DealPage chrome extension, you can chat with Paige at any time by clicking the DealPage icon in the top right corner of your browser. 
 
 You can highlight text in web forms, emails, and more to instantly have Paige answer them in the chat. This is useful for quickly getting answers to questions in emails, questionnaires, and more.
 
@@ -67,18 +91,18 @@ You can also kick off email workflows from inside Gmail.
 
 <img src="/images/chrome_extension.png" alt="Chrome Extension" />
 
+
+## Tips for Effective Use
+1. Be clear with your questions
+2. Gain more control by naming specific functions (e.g. “Use document search…”)
+3. Maintain your knowledge base. Ensure it has adequate coverage to get the best results.
+
 ## Improve the Responses
 We make it easy to iteratively test and improve the model's responses. Click the thumbs up or thumbs down button on the response to provide feedback. This feedback is used to improve the model's responses over time. You can also edit the responses and add to your Verified Answers library to instantly improve outputs.
 
 <img src="/images/chat-feedback.png" alt="Chat Feedback" />
 
 <img src="/images/chat-verified-answer.png" alt="Chat Feedback" />
-
-
-## Tips for Effective Use
-1. Be clear with your questions
-2. Gain more control by naming specific functions (e.g. “Use document search…”)
-3. Maintain your knowledge base. Ensure it has adequate coverage to get the best results.
 
 ## FAQ
 

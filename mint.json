@@ -31,7 +31,7 @@
       "pages": ["introduction", "quickstart"]
     },
     {
-      "group": "How the AI Works",
+      "group": "How Our AI Works",
       "pages": [
         "how-it-works/learning", 
         "how-it-works/completing-workflows"
@@ -42,6 +42,7 @@
       "pages": [
         "usage/knowledge-base",
         "usage/deals",
+        "usage/templates",
         "usage/chat",
         "usage/documents",
         "usage/integrations"
@@ -50,8 +51,16 @@
     {
       "group": "Workflows",
       "pages": [
-        "workflows/emails",
-        "workflows/content-generation",
+        "workflows/pipeline-reviews",
+        "workflows/product-gap-analysis",
+        "workflows/meeting-prep",
+        "workflows/handoffs",
+        "workflows/follow-up-emails",
+        "workflows/email-responses",
+        "workflows/proposal-writing",
+        "workflows/sales-deck-customization",
+        "workflows/poc-plans",
+        "workflows/onboarding-checklist",
         "workflows/rfp-responses",
         "workflows/sq-responses"
       ]

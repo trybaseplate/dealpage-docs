@@ -5,18 +5,25 @@ description: "Reusable documents that can be personalized"
 
 <img src="/images/template.png" alt="Template" />
 
-Templates are reusable versions of pitch decks, proposals, etc. that can be personalized for each client.
-To make part of the template personalizable, replace it with a variable and provide a default value.
-The default value will be used as a guide for the personalization. If no default value is provided, then the model will generate
-with more creative decisioning. You can also provide custom instructions that guide the tone or what to search for with each variable.
+Templates are reusable versions of your sales collateral. These are typically proposals, sales decks, checklists, and other documents that are used frequently in your sales process. 
+
+DealPage uses variables to customize your templates and make them personalizable. These variables are dynamically filled with real data from your deals, contacts, and content library for each deal.
+
+## Creating a Template
+Navigate to the Templates tab and upload any .docx, .pptx, or .xlsx file. You can also create templates from scratch. 
+You will replace content in your Template with variables and instructions for Paige to use when filling them in.
 
 ## Variables
+There are 5 types of variables, each that uses a curly-brace syntax. An example is `{customer.name}` Paige uses your custom instructions, and optional 'default values' to iterate through each variable in a document and fill it out.
 
-There are 5 types of variables, each with different syntax.
+You should think of the instructions for each variable as prompts - the more specific you are, the better the output will be. 
+For example, you can ask Paige to write 3 bullet points about a customer's pain points, or to fill in a table with the customer's contact information.
+
+Default values are used as fallbacks if Paige can't find any deal-specific content to personalize the template.
 
 ### Text
 
-These will be replaced with plain text. Useful for titles, address lines, or smaller phrases.
+These will be replaced with plain text. Useful for titles, address lines, introductions, recaps, etc. 
 
 ```
 {customer_name}

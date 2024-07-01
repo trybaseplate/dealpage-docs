@@ -1,0 +1,36 @@
+---
+title: "Product Gap Analysis"
+description: "Maintain alignment between Product and the Field using AI."
+---
+
+## Overview
+Paige can help SEs, PMs, and leadership efficiently and accurately identify product gaps and prioritize features based on customer feedback and deal data.
+
+Collecting product feedback is typically an inefficient and highly subjective process. Paige can help you quickly and accurately identify product gaps by directly analyzing meeting transcripts, emails, and other customer interactions, and then summarizing into tables or other formats.
+
+Product gaps analysis is typically conducted via custom queries in Chat. You can specify what deals to review, what questions to answer, and more - all via simple natural language queries.
+
+<img src="/images/chat-product-gaps.png" alt="chat insights for product gap identification" />
+
+
+## Examples
+1. Search our last 5 recently lost deals, find product gaps in the meeting transcripts for each deal, than categorize them and then output them in a table along with the amount of revenue affected. After identifying gaps, look in our product roadmap to see if we have an estimated delivery date. Add this as part of the table
+2. Search through the meeting transcripts in our lost deals, then search our in progress deals for mentions of Mircrosoft Dynamics support. Pull out the specific quotes into a table with justification based on revenue
+
+## Pre-requisites
+None - just ensure Paige has access to the data you want her to review!
+
+## How it Works
+1. Create a chat session or open the chat modal using "cmd + k". 
+2. Enter your query. Use one of the examples above or create your own! 
+3. Paige will first select Deals based on the criteria in your query. Paige can select deals based on the following criteria:
+    - Recency
+    - Deal Size
+    - Deal Stage
+    - Customer Description
+    - Revenue
+    - Number of employees
+4. After selecting a set of Deals, Paige will execute a set of queries on each Deal to answer your questions. She will filter by the criteria you specify, for example, looking inside meeting transcripts.
+5. Paige will then look in your product roadmap to identify delivery dates and add them to the table. 
+6. Paige will then summarize the results in a format according to your query, for example a table.
+
