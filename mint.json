@@ -28,30 +28,26 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart"]
+      "pages": ["introduction/overview", "introduction/quickstart"]
     },
     {
-      "group": "How Our AI Works",
+      "group": "Key Concepts",
+      "pages": ["guides/paige", "guides/search", "guides/prompting", "guides/workflows",  "guides/documents" 
+    ]
+    },
+    {
+      "group": "Knowledge Base",
       "pages": [
-        "how-it-works/learning", 
-        "how-it-works/completing-workflows"
+        "knowledge_base/deals",
+        "knowledge_base/content-library",
+        "knowledge_base/templates"
       ]
     },
     {
-      "group": "Platform Features",
-      "pages": [
-        "usage/knowledge-base",
-        "usage/deals",
-        "usage/templates",
-        "usage/chat",
-        "usage/documents",
-        "usage/integrations"
-      ]
-    },
-    {
-      "group": "Workflows",
+      "group": "Use Cases / Workflows",
       "pages": [
         "workflows/pipeline-reviews",
+        "workflows/closed-lost-analysis",
         "workflows/product-gap-analysis",
         "workflows/meeting-prep",
         "workflows/handoffs",
@@ -64,7 +60,12 @@
         "workflows/rfp-responses",
         "workflows/sq-responses"
       ]
-    }
+    },
+    { "group": "Integrations",
+    "pages": [
+      "integrations/overview"
+    ]
+  }
   ],
   "footerSocials": {
     "twitter": "https://x.com/DealPageHQ",

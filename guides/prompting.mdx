@@ -1,0 +1,43 @@
+---
+title: "Prompting 101"
+description: "Best Practices for Chatting with Paige"
+---
+Paige handles natural language prompts of a variety of styles and languages. You can be vague in your query and let Paige do her best to understand your intent, or be clear and direct in your query to provide stricter instructions.
+
+The second strategy is highly recommended for complex tasks that involve recursive search.
+
+## Simple Question-Answering
+
+Ask your question in any way - Paige rewrites your question on the backend so you can input phrases, misspellings, or whatever and expect a good response.
+
+## Complex Tasks
+<img src="/images/prompt-construction.png" alt="Good Prompts examples" />
+
+Here are some characteristics of a good prompt for a complex tasks.
+
+1. Task
+    1. Tell Paige what you’re working on so she has some context. I typically include this in the first line of the prompt
+    2. e.g. “I’m prepping for a meeting with a healthcare company”
+2. Steps
+    1. Tell Paige what you want her to do. The more clarity the better! 
+    2. e.g. “First find the 5 largest deals we did with healthcare companies. Search through the meetings in each one and find mentions of CRM integrations. Then lookin our knowledge base and remind me what CRMs we integrate with.”
+3. Output 
+    1. Tell Paige how you want her to format your answer. This could be in an email, bullet points, a table, or whatever you need.
+    2. E.g. “Output results in a table with columns for the Deal, the deal size, the line items we sold, the CRM the used, and yes/no for whether we support it natively”
+
+## Improve the Responses
+Click the thumbs up or thumbs down button on the response to provide feedback. This feedback is used periodically to improve the model's responses. You can also edit the responses and add to your Verified Answers library to instantly improve outputs.
+
+
+<img src="/images/chat-verified-answer.png" alt="Chat Feedback" />
+
+## FAQ
+
+### Is my data being used to train models?
+* Your data is never used to train our models, or any 3rd party models. As mentioned above, we leverage RAG to provide Paige with data at "generation-time", so she doesn't need to be trained for specific teams. Teams on the Business plan may request fine-tuning for more brand-specific writing.
+
+### What models do you use?
+* Every answer we provide or workflow we complete involves multiple steps. Our embedding and re-ranking models are trained in-house for optimized performance on large tech knowledge bases. We leverage best-in-class 3rd party models for many tool calling and writing tasks, including GPT-4o and Claude 3 Opus. Some tasks like summarization are completed by self-hosted models.
+
+### How does you segment deal-specific content from the knowledge base and other deals?
+* Knowledge Base content and Deals are segmented into completely separate search indexes. Every Deal document is tied to a specific deal (by name and unique identifier). This allows our models to plan, and then executu a search in a specific location. This enables powerful behavior - for example, allowing you to ask questions about specific contract terms in a particular account.

@@ -1,0 +1,85 @@
+---
+title: "How Paige Works"
+description: "Turn your GTM data into answers, insights, and collateral."
+---
+## Data Architecture
+<img src="/images/decision-tree.png" alt="Decision Tree Chat" />
+Paige is able to complete workflows due to a simple but powerful abstraction over your Deals and the Content Library.
+- Deals are individual libraries that contain deal-specific information. Deals are synced with your CRM, meeting transcripts, emails, and shared collateral.
+- The Content Library typically contains sales collateral, product documentation, security policies, and other documents helpful enable your GTM team. 
+
+Each resource in your Deals and Content Library are embedded and indexed in DealPage - accessible for Paige (and your team) to search via a process called RAG.
+
+## RAG (Retrieval-Augmented Generation) Overview
+<img src="/images/rag-basic.png" alt="Rag Explained" />
+
+Search and question answering with LLMs is typically called Retrieval-Augmented Generation (RAG). In this process, search results from external search indexes are provided as context to help the AI complete tasks accurately. 
+
+We use a multi-step RAG architecture that incorporates access controls, filtering, reranking, and citations. This allows you to find the right answer (or no answer) confidently and quickly, regardless of your team’s scale.
+
+
+## Tools
+Paige executes 3 core types of search
+
+1. Deal Selection
+2. Deal Search
+3. Knowledge Base Search
+
+Paige also executes multi-step queries using Recursion - allowing her to chain various search tasks together to help complete advanced tasks.
+
+### Deal Selection
+
+Deal Selection helps Paige find any number of Deals that meet your criteria.
+
+Deals are indexed via a variety of features including Name, Deal Stage, Deal Size, Description, Line Items, Contacts, Industry, etc.
+
+You can select Deals using simple natural language prompts. Paige constructs the filters for your query based on your input. Paige searches across your Deals and identifies the ones that match your criteria.
+
+Examples:
+
+1. What are the last 5 deals we won with healthcare companies?
+2. What deals do we have in the POC stage right now?
+
+<img src="/images/deal-selection.png" alt="Deal Selection" />
+
+### Deal Search
+
+Deal Search helps search across the data associated with a specific Deal. Deal Search is almost always preceded by Deal Selection
+
+You can configure DealPage using Integrations so that each Deal is integrated with your important data sources like email, CRM, meetings, and collateral. 
+
+Deal Context (the various objects indexed in your Deal) is indexed via timestamp and type (e.g. meeting, email, proposal, etc.)
+
+This enables queries like:
+
+1. What questions did Acme Corp team ask in the last few emails?
+2. What feature requests did Acme Corp mention in our meetings with them
+
+<img src="/images/deal-search.png" alt="Deal Search" />
+
+### Knowledge Search
+
+Knowledge Search helps search across your team’s general content. This helps answer questions about your products, services, security, and other topics. Knowledge Search enables Paige to look through the documents in your Content Library and in your Verified Answers.
+
+Teams typically integrate DealPage with their documentation sites (via URL sitemap sync), their knowledge bases (Notion, Confluence, Drive, etc.), and upload any other collateral like decks, spreadsheets, and .pdfs. 
+
+This enables Paige to answer questions like:
+
+1. What data centers do we use for customers in the EU?
+2. What is the process for integrating with a custom CDP?
+
+<img src="/images/kb-search.png" alt="Deal Search" />
+
+
+### Recursive Search
+
+These search tools are helpful on their own. For more complex tasks, you can “chain” these together. 
+
+This allows you to execute Deal Search across multiple deals, execute multiple Knowledge Search queries, or any combination of the two.
+
+Examples:
+
+1. Search our last 5 recently lost deals, find product gaps in the meeting transcripts for each deal, than categorize them and then output them in a table along with the amount of revenue affected. After identifying gaps, look in our product roadmap to see if we have an estimated delivery date. Add this as part of the table
+2. Find deals with healthcare companies that we won, and summarize the products and features that were the most important. Then, search for the questions they asked during meetings and categorize them in a table. Once you output the table of questions, search the knowledge base for reach row and answer them.
+
+<img src="/images/chat-product-gaps.png" alt="Recursive function calling" />
